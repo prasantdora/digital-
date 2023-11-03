@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: #262a2f;
+}
+.container{
+    background: #fff;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px 35px;
+    border-radius:10px ;
+    position: absolute;
+}
+.container p{
+ font-size:15px ;
+ font-weight: 600;
+ margin-bottom: 8px;
+
+
+}
+.container input{
+    width: 100%;
+    height: 50%;
+    border: 1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+
+}
+.container button{
+    width: 100%;
+    height: 50%;
+    background: #494eea;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgb(0, 0,0,0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+    padding: 10px;
+}

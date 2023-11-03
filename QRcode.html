@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Qrcode.css">
+</head>
+<body>
+    <div class="container">
+        <p>enter your twxt or URL</p>
+        <input type="text" placeholder="enter url" id="qrtext">
+       <div class="imgbox">
+        <img src="" id="qrimage">
+       </div>
+        <button onclick="generatQR()">Generate your QR code</button>
+
+    </div>
+    <script>
+        let imgbox=document.getElementById("imgbox");
+        let qrimage=document.getElementById("qrimage");
+        let qrtext=document.getElementById("qrtext");
+        function generatQR(){
+            qrimage.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tse1.mm.bing.net/th?id=OIP.y6SWhIQ0_z4ETRa_AdQHIAHaGq&pid=Api&rs=1&c=1&qlt=95&w=134&h=120"+qrtext.value;
+
+        }
+        </script>
+</body>
+</html>
